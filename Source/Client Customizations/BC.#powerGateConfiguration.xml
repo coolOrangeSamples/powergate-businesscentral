@@ -1,0 +1,31 @@
+﻿<Root>
+  <!-- Key = ERP value, Value = Vault Unit Display Name-->
+  <UnitOfMeasures>
+    <Entry Key="BOX" Value="Box" />
+    <Entry Key="CAN" Value="Can" />
+    <Entry Key="CM" Value="Centimeter" />
+    <Entry Key="DAY" Value="Day" />
+    <Entry Key="PCS" Value="Each" />
+    <Entry Key="FT" Value="Foot" />
+    <Entry Key="GAL" Value="Gallon" />
+    <Entry Key="GR" Value="Gram" />
+    <Entry Key="HOUR" Value="Hour" />
+    <Entry Key="IN" Value="Inch" />
+    <Entry Key="KG" Value="Kilo" />
+    <Entry Key="KM" Value="Kilometer" />
+    <Entry Key="LQD OZ" Value="Liquid Ounce" />
+    <Entry Key="L" Value="Liter" />
+    <Entry Key="M" Value="Meter" />
+    <Entry Key="MILES" Value="Miles" />
+    <Entry Key="MM" Value="Milimeter" />                                                                                                                                                                                                                                 <Entry Key="MG" Value="Milligram" />                                                                                                                                                                                                                                 <Entry Key="ML" Value="Milliliter" />                                                                                                                                                                                                                                <Entry Key="OZ" Value="Ounce" />                                                                                                                                                                                                                                     <Entry Key="PACK" Value="Pack" />
+    <Entry Key="PALLET" Value="Pallet" />
+    <Entry Key="LB" Value="Pound" />
+    <Entry Key="QT" Value="Quart" />
+    <Entry Key="SET" Value="Set" />
+    <Entry Key="SQCM" Value="Square Centimeter" />
+    <Entry Key="SQFT" Value="Square Foot" />
+    <Entry Key="SQIN" Value="Square Inch" />
+    <Entry Key="SQM" Value="Square Meter" />
+    <Entry Key="YD" Value="Yard" />
+  </UnitOfMeasures>
+</Root>

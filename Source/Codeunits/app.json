@@ -1,0 +1,32 @@
+{
+  "id": "c95535ad-55c0-42c1-8c03-9a4eab0604c6",
+  "name": "PowerGate",
+  "publisher": "COOLORANGE",
+  "version": "1.0.0.0",
+  "brief": "COOLORANGE powerGate",
+  "description": "Helper procedures for COOLORANGE powerGate - Business Central Integration",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "coolorange.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50150
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

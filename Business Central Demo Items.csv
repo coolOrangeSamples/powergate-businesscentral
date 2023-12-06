@@ -1,0 +1,71 @@
+﻿Number;Title;Description;Material
+91001;Loctite 243;Threadlocker adhesive for locking nuts and bolts;Anaerobic Adhesive
+91002;Loctite 401;General purpose instant adhesive;Bonding Adhesive
+91003;Loctite 567;High-temperature thread sealant;Anaerobic Adhesive
+91004;Loctite 263;High-strength threadlocker for heavy-duty applications;Anaerobic Adhesive
+91005;Epoxy Resin;Two-component epoxy adhesive for bonding and laminating;Epoxy Resin
+91006;Cyanoacrylate (Super Glue);Fast-acting instant adhesive for a wide range of materials;Cyanoacrylate
+91007;3M Scotch-Weld DP420;Two-part epoxy adhesive for metal, plastic, and composite bonding;Epoxy Resin
+91008;3M Scotch-Weld 2216;Flexible epoxy adhesive for aerospace and industrial applications;Epoxy Resin
+91009;JB Weld Original;Steel-reinforced epoxy adhesive for strong and durable repairs;Epoxy Resin
+91010;Gorilla Glue;Multi-purpose polyurethane adhesive for indoor and outdoor use;Polyurethane
+91011;Gorilla Epoxy;Highly resistant epoxy adhesive for various materials;Epoxy Resin
+91012;Permatex Clear RTV Silicone;Transparent silicone adhesive and sealant;Silicone
+91013;Dow Corning 732 Multi-Purpose Sealant;General-purpose silicone adhesive and sealant;Silicone
+91014;Henkel Hysol EA9394;High-performance epoxy adhesive for aerospace applications;Epoxy Resin
+91015;3M 5200 Marine Adhesive Sealant;Permanent bonding and sealing adhesive for marine environments;Polyurethane
+91016;Loctite PL Premium;High-strength polyurethane adhesive for construction and woodworking;Polyurethane
+91017;DAP Weldwood Contact Cement;Neoprene-based contact adhesive for bonding large surfaces;Neoprene
+91018;3M Super 77 Multipurpose Adhesive;High-tack adhesive for lightweight materials;Neoprene
+91019;Devcon Plastic Welder;Specialized adhesive for bonding plastic materials;Cyanoacrylate
+91020;Devcon 5-Minute Epoxy;Quick-setting epoxy adhesive for general repairs;Epoxy Resin
+90001;"Aluminum Pipe (1.5"" x 0.125"")";Lightweight and corrosion-resistant pipe;Aluminum Alloy 6061-T6
+90002;"Stainless Steel Pipe (2"" x 0.25"")";Corrosion-resistant pipe for various industries;Stainless Steel 304
+90003;"Copper Pipe (1"" x 0.125"")";Highly conductive pipe for plumbing and electrical applications;Copper C11000
+90004;"PVC Pipe (3"" x 0.375"")";Durable and lightweight pipe for plumbing;PVC (Polyvinyl Chloride)
+90005;"HDPE Pipe (2.5"" x 0.25"")";High-density polyethylene pipe for water and gas distribution;HDPE (High-Density Polyethylene)
+90006;"Carbon Steel Pipe (2"" x 0.25"")";Strong and versatile pipe for various applications;Carbon Steel
+90007;"Brass Pipe (1.25"" x 0.125"")";Durable and corrosion-resistant pipe for plumbing;Brass C36000
+90008;"Aluminum Sheet (12"" x 24"" x 0.063"")";Flat aluminum sheet for various applications;Aluminum Alloy 5052-H32
+90009;"Stainless Steel Sheet (12"" x 24"" x 0.036"")";Durable stainless steel sheet for diverse applications;Stainless Steel 316
+90010;"Copper Sheet (12"" x 12"" x 0.032"")";Thin copper sheet for electrical components;Copper C10100
+90011;"Steel Sheet (24"" x 36"" x 0.06"")";Sheet metal for construction and fabrication;Carbon Steel
+90012;"Brass Sheet (8"" x 12"" x 0.04"")";Sheet of brass for art and craft projects;Brass C26000
+90013;"Aluminum Plate (12"" x 24"" x 0.25"")";Thick aluminum plate for structural and aerospace use;Aluminum Alloy 6061
+90014;"Stainless Steel Plate (24"" x 48"" x 0.25"")";Corrosion-resistant plate for heavy-duty applications;Stainless Steel 304
+90015;"Copper Plate (8"" x 8"" x 0.125"")";Durable and conductive plate for electrical applications;Copper C11000
+90016;"Carbon Fiber Sheet (12"" x 12"" x 0.04"")";Lightweight and high-strength sheet for aerospace and sports;Carbon Fiber Composite
+90017;"Fiberglass Sheet (18"" x 24"" x 0.125"")";Flat and flexible sheet for reinforcement and composites;Fiberglass
+90018;"Polycarbonate Sheet (12"" x 18"" x 0.06"")";Transparent and impact-resistant sheet;Polycarbonate
+90019;"Acrylic Sheet (16"" x 20"" x 0.125"")";Clear and versatile sheet for various applications;Acrylic (Polymethyl Methacrylate)
+90020;"Nylon Rod (0.75"" x 12"")";Strong and lightweight rod for engineering applications;Nylon
+90021;"Delrin (Acetal) Rod (1"" x 6"")";Low-friction and wear-resistant rod;Acetal (Polyoxymethylene)
+90022;"Brass Rod (0.5"" x 36"")";Sturdy brass rod for machining and decorative purposes;Brass C36000
+90023;"Aluminum Rod (1"" x 24"")";Round aluminum rod for various engineering applications;Aluminum Alloy 6061
+90024;"Stainless Steel Rod (0.625"" x 36"")";Corrosion-resistant rod for mechanical and structural use;Stainless Steel 304
+90025;"Copper Rod (0.75"" x 12"")";Highly conductive rod for electrical connections;Copper C11000
+90026;"Carbon Fiber Rod (0.375"" x 36"")";Stiff and lightweight rod for engineering projects;Carbon Fiber Composite
+90027;"Fiberglass Rod (0.5"" x 48"")";Flexible and durable rod for reinforcement and support;Fiberglass
+90028;"Aluminum Round Bar (1"" x 36"")";Round bar for structural and decorative purposes;Aluminum Alloy 6061
+90029;"Steel Round Bar (1.25"" x 48"")";Durable and versatile round bar for various applications;Carbon Steel
+90030;"Brass Round Bar (0.75"" x 24"")";Round bar for machining and decorative purposes;Brass C36000
+90031;"Aluminum Square Bar (0.75"" x 24"")";Square bar for structural and architectural applications;Aluminum Alloy 6061
+90032;"Steel Square Bar (1"" x 12"")";Square bar for mechanical and industrial use;Carbon Steel
+90033;"Brass Square Bar (0.625"" x 18"")";Square bar for machining and decorative purposes;Brass C36000
+90034;"Aluminum Hex Bar (0.625"" x 24"")";Hexagonal bar for various engineering applications;Aluminum Alloy 6061
+90035;"Steel Hex Bar (1"" x 12"")";Hexagonal bar for structural and mechanical use;Carbon Steel
+90036;"Brass Hex Bar (0.75"" x 24"")";Hexagonal bar for machining and decorative purposes;Brass C36000
+90037;"Aluminum Angle (2"" x 2"" x 0.125"")";Angle bar for structural support;Aluminum Alloy 6061
+90038;"Steel Angle (3"" x 3"" x 0.25"")";Angle bar for construction and fabrication;Carbon Steel
+90039;"Stainless Steel Angle (1.5"" x 1.5"" x 0.1875"")";Corrosion-resistant angle bar for various applications;Stainless Steel 304
+90040;"Aluminum Channel (1"" x 1.5"" x 0.125"")";Channel section for framing and edging;Aluminum Alloy 6063-T5
+90041;"Steel Channel (2"" x 1"" x 0.125"")";Channel section for structural support;Carbon Steel
+90042;"Stainless Steel Channel (3"" x 1.5"" x 0.1875"")";Corrosion-resistant channel section for diverse applications;Stainless Steel 304
+90043;"Aluminum I-Beam (4"" x 2.5"" x 0.25"")";Structural I-shaped beam for construction;Aluminum Alloy 6061
+90044;"Steel I-Beam (6"" x 4"" x 0.25"")";Strong and durable I-shaped beam for structural use;Carbon Steel
+90045;"Stainless Steel I-Beam (8"" x 5"" x 0.375"")";Corrosion-resistant I-shaped beam for diverse applications;Stainless Steel 304
+90046;"Aluminum U-Channel (1"" x 1.5"" x 0.125"")";U-shaped channel for edging and finishing;Aluminum Alloy 6063-T5
+90047;"Steel U-Channel (2"" x 2.5"" x 0.25"")";U-shaped channel for structural and architectural applications;Carbon Steel
+90048;"Stainless Steel U-Channel (3"" x 3.5"" x 0.1875"")";Corrosion-resistant U-shaped channel for various uses;Stainless Steel 304
+90049;"Aluminum Square Tube (2"" x 2"" x 0.125"")";Square tube for structural and architectural purposes;Aluminum Alloy 6063-T5
+90050;"Steel Square Tube (3"" x 3"" x 0.25"")";Square tube for mechanical and structural applications;Carbon Steel
