@@ -1,5 +1,0 @@
-﻿<Include xmlns="http://wixtoolset.org/schemas/v4/wxs">
-<!--	Include other include files and include this in your Product element. -->
-  <?include ARPProperties.wxi ?>
-  <?include CheckCoolOrangeProductInstalled.wxi ?>
-</Include>
