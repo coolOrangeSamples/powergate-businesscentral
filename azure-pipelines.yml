@@ -39,7 +39,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
-    contents: 'Source\Plugin\BusinessCentralPlugin\bin\**\en-us\*.msi' 
+    contents: 'Source\Plugin\Installer\bin\**\en-us\*.msi' 
     targetFolder: '$(Build.ArtifactStagingDirectory)'
     cleanTargetFolder: true
     overWrite: true
