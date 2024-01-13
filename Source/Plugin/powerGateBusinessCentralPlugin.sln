@@ -3,24 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "powerGateBusinessCentralPlugin", "powerGateBusinessCentralPlugin\powerGateBusinessCentralPlugin.csproj", "{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessCentralPlugin", "BusinessCentralPlugin\BusinessCentralPlugin.csproj", "{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dialogs", "Dialogs\Dialogs.csproj", "{0A0D4AF3-238A-47B8-A42B-4E451624AE74}"
+EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "Installer", "Installer\Installer.wixproj", "{CE9628F8-788A-47AE-A941-5BB620824FFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A0D4AF3-238A-47B8-A42B-4E451624AE74} = {0A0D4AF3-238A-47B8-A42B-4E451624AE74}
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61} = {8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|Any CPU.Build.0 = Debug|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|x64.ActiveCfg = Debug|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Debug|x64.Build.0 = Debug|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|Any CPU.ActiveCfg = Release|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|Any CPU.Build.0 = Release|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|x64.ActiveCfg = Release|x64
+		{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}.Release|x64.Build.0 = Release|x64
 		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0D4AF3-238A-47B8-A42B-4E451624AE74}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Debug|Any CPU.Build.0 = Debug|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Debug|x64.ActiveCfg = Debug|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Debug|x64.Build.0 = Debug|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Release|Any CPU.ActiveCfg = Release|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Release|Any CPU.Build.0 = Release|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Release|x64.ActiveCfg = Release|x64
+		{CE9628F8-788A-47AE-A941-5BB620824FFE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

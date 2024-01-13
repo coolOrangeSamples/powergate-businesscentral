@@ -1,0 +1,18 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.3">
+  <ItemGroup>
+    <Content Include="Config.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.UI.wixext" Version="4.0.3" />
+  </ItemGroup>
+  <PropertyGroup>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Build>0</Build>
+    <Revision>0</Revision>
+    <OutputName>BusinessCentral_Plugin_$(Major).$(Minor).$(Build).$(Revision)</OutputName>
+    <Manufacturer>coolOrange</Manufacturer>
+    <ProductName>powerGatePlugin</ProductName>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+</Project>

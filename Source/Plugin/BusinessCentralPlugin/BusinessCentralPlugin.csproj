@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F129800-93AC-4C4B-98C9-DB8BD3FBBF61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessCentralPlugin</RootNamespace>
+    <AssemblyName>BusinessCentralPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\ProgramData\coolOrange\powerGateServer\Plugins\BusinessCentral\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>C:\ProgramData\coolOrange\powerGateServer\Plugins\BusinessCentral\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="powerGateServer.SDK">
+      <HintPath>C:\Program Files\coolOrange\powerGateServer\powerGateServer.SDK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessCentral\Company.cs" />
+    <Compile Include="BusinessCentral\Document.cs" />
+    <Compile Include="BusinessCentral\AttributeDefinition.cs" />
+    <Compile Include="BusinessCentral\ItemCard.cs" />
+    <Compile Include="BusinessCentral\Attribute.cs" />
+    <Compile Include="BusinessCentral\Link.cs" />
+    <Compile Include="BusinessCentral\ODataCollection.cs" />
+    <Compile Include="BusinessCentral\Lookup.cs" />
+    <Compile Include="BusinessCentral\ProdBOMLine.cs" />
+    <Compile Include="BusinessCentral\ProductionBOM.cs" />
+    <Compile Include="BusinessCentral\RoutingLink.cs" />
+    <Compile Include="BusinessCentral\Vendor.cs" />
+    <Compile Include="BomRowsService.cs" />
+    <Compile Include="BomHeadersService.cs" />
+    <Compile Include="BusinessCentral\Item.cs" />
+    <Compile Include="DocumentsService.cs" />
+    <Compile Include="Helper\BusinessCentralApi.cs" />
+    <Compile Include="Helper\Configuration.cs" />
+    <Compile Include="Helper\Timer.cs" />
+    <Compile Include="Helper\ExpressionExtensions.cs" />
+    <Compile Include="Helper\Token.cs" />
+    <Compile Include="Helper\MicrosoftOAuth.cs" />
+    <Compile Include="Helper\RestClientWithLogging.cs" />
+    <Compile Include="ItemsService.cs" />
+    <Compile Include="WebService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BusinessCentralPlugin.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp">
+      <Version>110.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp.Serializers.NewtonsoftJson">
+      <Version>110.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

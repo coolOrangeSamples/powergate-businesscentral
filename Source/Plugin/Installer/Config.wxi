@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<?define PluginName = "coolOrange powerGate - MS Business Central Plugin" ?>
+	<?define PluginShortName = "powerGate - Business Central Plugin" ?>
+	<?define PluginDirectoryName = "BusinessCentral" ?>
+</Include>

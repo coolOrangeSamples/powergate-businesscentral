@@ -1,0 +1,17 @@
+﻿<Include xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<?define UpgradeCode="f35a7c04-c153-4a31-b557-d3a9ede2a4b8"?>
+  <?define WikiLink="https://github.com/coolOrangeLabs/powerGateTemplate/wiki"?>
+	<?define IconName="..\Resources\coolOrange.ico"?>
+	<?define PVersion="$(var.Major).$(var.Minor).$(var.Build).$(var.Revision)"?>
+	<?define PName="coolOrange Dynamics NAV powerGate Plugin"?>
+	<?define PShortVersion="$(var.Major).$(var.Minor)"?>
+  <?define CompanyDirectory="coolOrange"?>
+	
+	<?if $(var.Platform) = x64 ?>
+	  <?define Win64 = "yes" ?>
+	  <?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+	<?else?>
+	  <?define Win64 = "no" ?>
+	  <?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+	<?endif?>
+</Include>

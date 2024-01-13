@@ -1,0 +1,14 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<?include Config.wxi?>
+		<StandardDirectory Id="CommonAppDataFolder">
+			<Directory Id="COOLORANGE" Name="coolOrange">
+				<Directory Id="POWERGATESERVER" Name="powerGateServer">
+					<Directory Id="PLUGINS" Name="Plugins">
+						<Directory Id="INSTALLFOLDER" Name="$(var.PluginDirectoryName)" />
+					</Directory>
+				</Directory>
+			</Directory>
+		</StandardDirectory>
+	</Fragment>
+</Wix>
