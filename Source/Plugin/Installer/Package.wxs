@@ -7,7 +7,7 @@
 		Name="$(var.PluginName)"
 		Manufacturer="coolOrange"
 		
-		Version="$(var.Major).$(var.Minor).$(var.Build).$(var.Revision)"
+		Version="$(var.Major).$(var.Minor).$(var.Patch).$(var.Revision)"
 		UpgradeCode="f7078c60-e404-432d-b83c-56363e5a96db">
 
 		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />

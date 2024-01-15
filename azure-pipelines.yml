@@ -15,9 +15,10 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'x64'
   buildConfiguration: 'Release'
-  buildMajor: '$(Major)'
-  buildMinor: '$(Minor)'
-  buildRevision: '$(Revision)'
+  major: 24
+  minor: 0
+  patch: $[counter(variables['major'], 0)]
+  build: $(Build.BuildId)
   increment: $[counter(1,0)]
 
 steps:
@@ -34,7 +35,7 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/property:Major=$(buildMajor);Minor=$(buildMinor);Revision=$(buildRevision);Build=$(Build.BuildNumber);VersionAssembly=$(buildMajor).$(buildMinor).$(buildRevision).$(Build.BuildNumber)'
+    msbuildArgs: '/property:Major=$(major);Minor=$(minor);Patch=$(patch);Revision=$(Build.BuildNumber);VersionAssembly=$(major).$(minor).$(patch).$(Build.BuildNumber)'
 
 - task: CopyFiles@2
   inputs:

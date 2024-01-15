@@ -8,12 +8,12 @@
   <PropertyGroup>
     <Major>1</Major>
     <Minor>0</Minor>
-    <Build>0</Build>
+    <Patch>0</Patch>
     <Revision>0</Revision>
-    <OutputName>BusinessCentral_Plugin_$(Major).$(Minor).$(Build).$(Revision)</OutputName>
+    <OutputName>BusinessCentral_Plugin_$(Major).$(Minor).$(Patch).$(Revision)</OutputName>
     <Manufacturer>coolOrange</Manufacturer>
     <ProductName>powerGatePlugin</ProductName>
     <Platforms>x64</Platforms>
-	<DefineConstants>Major=$(Major);Minor=$(Minor);Build=$(Build);Revision=$(Revision);$(DefineConstants)</DefineConstants>
+	<DefineConstants>Major=$(Major);Minor=$(Minor);Patch=$(Patch);Revision=$(Revision);$(DefineConstants)</DefineConstants>
   </PropertyGroup>
 </Project>
