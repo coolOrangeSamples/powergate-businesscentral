@@ -13,10 +13,10 @@ pool:
 
 variables: 
   solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
+  buildPlatform: 'x64'
   buildConfiguration: 'Release'
-  buildMajor: '$(Major)'
-  buildMinor: '$(Minor)'
+  buildMajor: 1
+  buildMinor: 0
   buildRevision: '$(Revision)'
   increment: $[counter(1,0)]
 
@@ -32,9 +32,9 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    platform: 'x64'
+    platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/property:Major=$(buildMajor);Minor=$(buildMinor);Build=$(Build.BuildNumber);Revision=$(buildRevision)'
+    msbuildArgs: '/property:Major=$(buildMajor);Minor=$(buildMinor);Build=$(Build.BuildNumber);Revision=$(buildRevision);VersionAssembly=$(buildMajor).$(buildMinor).$(buildRevision).$(Build.BuildNumber)'
     
 - task: CopyFiles@2
   inputs:
