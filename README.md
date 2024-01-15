@@ -1,13 +1,13 @@
-[![Build Status](https://dev.azure.com/CoolOrange/LABS/_apis/build/status/powergate-dynamics-nav-sample?branchName=master)](https://dev.azure.com/CoolOrange/LABS/_build/latest?definitionId=112&branchName=master)
+
 
 # powergate-businesscentral
-
+[![Build Status](https://dev.azure.com/CoolOrange/LABS/_apis/build/status%2FcoolOrangeLabs.powergate-businesscentral?branchName=main)](https://dev.azure.com/CoolOrange/LABS/_build/latest?definitionId=201&branchName=main)
 [![Windows](https://img.shields.io/badge/Platform-Windows-lightgray.svg)](https://www.microsoft.com/en-us/windows/)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5-blue.svg)](https://microsoft.com/PowerShell/)
-[![.NET](https://img.shields.io/badge/.NET%20Framework-4.7-blue.svg)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-blue.svg)](https://dotnet.microsoft.com/)
 
-[![powerGate](https://img.shields.io/badge/coolOrange%20powerGate-20-orange.svg)](https://www.coolorange.com/en-eu/connect.html#powerGate)
-[![powerGate Server](https://img.shields.io/badge/coolOrange%20powerGate%20Server-20-orange.svg)](https://www.coolorange.com/en-eu/connect.html#powerGate)
+[![powerGate](https://img.shields.io/badge/coolOrange%20powerGate-24-orange.svg)](https://www.coolorange.com/powerGate)
+[![powerGate Server](https://img.shields.io/badge/coolOrange%20powerJobs-24-orange.svg)](https://www.coolorange.com/powerJobs)
 
 ## Disclaimer
 
