@@ -14,5 +14,6 @@
     <Manufacturer>coolOrange</Manufacturer>
     <ProductName>powerGatePlugin</ProductName>
     <Platforms>x64</Platforms>
+	<DefineConstants>Major=$(Major);Minor=$(Minor);Build=$(Build);Revision=$(Revision);$(DefineConstants)</DefineConstants>
   </PropertyGroup>
 </Project>
