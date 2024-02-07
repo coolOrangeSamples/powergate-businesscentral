@@ -705,6 +705,8 @@ namespace BusinessCentralPlugin.Helper
         public async Task<List<BusinessCentral_Document>> GetDocuments(string number)
         {
             var bcItemMin = await GetItemMin(number);
+            if (bcItemMin == null)
+                return null;
 
             var request = GetRestRequest($"/Company('{Company}')/Items({bcItemMin.id})/ItemsdocumentAttachments");
             request.AddHeader("Accept", "application/json");
@@ -750,6 +752,8 @@ namespace BusinessCentralPlugin.Helper
         public async Task<byte[]> DownloadDocument(string number, string fileName)
         {
             var bcItemMin = await GetItemMin(number);
+            if (bcItemMin == null)
+                return null;
 
             var request = GetRestRequest($"/Company('{Company}')/Items({bcItemMin.id})/ItemsdocumentAttachments");
             request.AddHeader("Accept", "application/json");
@@ -785,6 +789,8 @@ namespace BusinessCentralPlugin.Helper
         public async Task UploadDocument(string number, string fileName, byte[] bytes)
         {
             var bcItemMin = await GetItemMin(number);
+            if (bcItemMin == null)
+                return;
 
             var request = GetRestRequest($"/Company('{Company}')/Items({bcItemMin.id})/ItemsdocumentAttachments");
             request.AddHeader("Accept", "application/json");
