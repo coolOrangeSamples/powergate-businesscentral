@@ -1,5 +1,3 @@
-
-
 # powergate-businesscentral
 [![Build Status](https://dev.azure.com/CoolOrange/LABS/_apis/build/status%2FcoolOrangeLabs.powergate-businesscentral?branchName=main)](https://dev.azure.com/CoolOrange/LABS/_build/latest?definitionId=201&branchName=main)
 
@@ -103,13 +101,13 @@ Only used for debugging purposes. Value must be "False".
 	<add key="BaseUrl" value="https://api.businesscentral.dynamics.com/v2.0/00000000-0000-0000-0000-000000000000/Sandbox/ODataV4" />
 
 	<!-- Business Central TenantId -->
-	<add key="TenantId" value="2f975c6c-1264-471f-a313-47c70f0f58e4" />
+	<add key="TenantId" value="00000000-0000-0000-0000-000000000000" />
 
 	<!-- Business Central ClientId -->
-	<add key="ClientId" value="00a1f193-c533-4fa5-9c5e-9ed747f49c36" />
+	<add key="ClientId" value="[yourClient Secret]" />
 
 	<!-- Business Central Client Secret -->
-	<add key="ClientSecret" value="A.o8Q~o1weCQK6hf6Y-L-nhtGF-~hHR.ocD0Wbp9" />
+	<add key="ClientSecret" value="[yourClientID]" />
 </BusinessCentral.OAuth>
 ```
 
@@ -207,24 +205,6 @@ Change the property mapping between Vault Items and Business Central items and P
 coolOrange s.r.l.  
 
 ![coolOrange](https://i.ibb.co/NmnmjDT/Logo-CO-Full-colore-RGB-short-Payoff.png)
-
-# powergate-businesscentral
-powerGate Vault - Business Central Integration
-
-Targets Business Central 2023 Release Weaver 1
-
-## Demo
-
-
-## Installation
-
-### powerGate Server Plugin
-
-### Client Customizations
-
-## Configuration
-
-### App.settings
 
 
 ![]()
