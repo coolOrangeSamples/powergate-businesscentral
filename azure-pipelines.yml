@@ -13,7 +13,7 @@ pool:
 
 variables: 
   solution: '**/*.sln'
-  buildPlatform: 'x64'
+  buildPlatform: 'AnyCPU'
   buildConfiguration: 'Release'
   major: 24
   minor: 0
