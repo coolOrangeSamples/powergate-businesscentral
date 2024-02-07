@@ -31,7 +31,7 @@ Register-VaultEvent -EventName LoginVault_Post -Action {
 	Disconnect-ERP
 	
 	#TODO: Set the URL of the powerGate Server
-	$connected = Connect-ERP -Service "http://localhost:8080/coolOrange/BusinessCentral"
+	$connected = Connect-ERP -Service "http://localhost:8080/PGS/BusinessCentral"
 	if(-not $connected) { return }
 
 	$sampleERPServices = (Get-ERPServices) | Where-Object {$_.Url.LocalPath -like '/PGS/ERP/*'}

@@ -5,7 +5,7 @@ namespace BusinessCentralPlugin
 {
     //netsh http add urlacl url=http://+:8080/PGS user=\Everyone
     //netsh http add urlacl url=http://+:8080/coolOrange user=\Everyone
-    [WebServiceData("coolOrange", "BusinessCentral")]
+    [WebServiceData("PGS", "BusinessCentral")]
     public class WebService : powerGateServer.SDK.WebService
     {
         public WebService()
