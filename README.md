@@ -104,10 +104,10 @@ Only used for debugging purposes. Value must be "False".
 	<add key="TenantId" value="00000000-0000-0000-0000-000000000000" />
 
 	<!-- Business Central ClientId -->
-	<add key="ClientId" value="[yourClient Secret]" />
+	<add key="ClientId" value="[yourClientID]" />
 
 	<!-- Business Central Client Secret -->
-	<add key="ClientSecret" value="[yourClientID]" />
+	<add key="ClientSecret" value="[yourClient Secret]" />
 </BusinessCentral.OAuth>
 ```
 
