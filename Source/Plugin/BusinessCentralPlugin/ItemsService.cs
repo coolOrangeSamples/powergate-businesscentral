@@ -110,16 +110,15 @@ namespace BusinessCentralPlugin
             };
         }
 
-        public override async void Update(Item entity)
+        public override void Update(Item entity)
         {
-            var bcItemCard = new ItemCard
+            var bcItemCard = Task.Run(async () => await BusinessCentralApi.Instance.UpdateItemCard(new ItemCard
             {
                 No = entity.Number,
                 Description = entity.Title,
                 Base_Unit_of_Measure = entity.UnitOfMeasure,
                 Net_Weight = entity.Weight
-            };
-            bcItemCard = await BusinessCentralApi.Instance.UpdateItemCard(bcItemCard);
+            })).Result;
 
             var tasks = new List<Task>
             {
@@ -132,16 +131,15 @@ namespace BusinessCentralPlugin
             Task.WaitAll(tasks.ToArray());
         }
 
-        public override async void Create(Item entity)
+        public override void Create(Item entity)
         {
-            var bcItemCard = new ItemCard
+            var bcItemCard = Task.Run(async () => await BusinessCentralApi.Instance.CreateItemCard(new ItemCard
             {
                 No = entity.Number,
                 Description = entity.Title,
                 Base_Unit_of_Measure = entity.UnitOfMeasure,
                 Net_Weight = entity.Weight
-            };
-            bcItemCard = await BusinessCentralApi.Instance.CreateItemCard(bcItemCard);
+            })).Result;
 
             var stopWatch = new Stopwatch();
             stopWatch.Start();

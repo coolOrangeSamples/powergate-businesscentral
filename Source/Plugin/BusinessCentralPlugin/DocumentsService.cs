@@ -49,9 +49,9 @@ namespace BusinessCentralPlugin
             return results;
         }
 
-        public override async void Create(Document entity)
+        public override void Create(Document entity)
         {
-            await BusinessCentralApi.Instance.CreateDocument(entity.Number, entity.FileName);
+            _ = Task.Run(async () => await BusinessCentralApi.Instance.CreateDocument(entity.Number, entity.FileName)).Result;
         }
 
         public override void Update(Document entity)
@@ -77,16 +77,16 @@ namespace BusinessCentralPlugin
             return new powerGateServer.SDK.Streams.ByteStream(bytes);
         }
 
-        public async void Upload(Document entity, IStream stream)
+        public void Upload(Document entity, IStream stream)
         {
             byte[] bytes;
             using (var ms = new MemoryStream())
             {
-                await stream.Source.CopyToAsync(ms);
+                Task.Run(async () => await stream.Source.CopyToAsync(ms));
                 bytes = ms.ToArray();
             }
 
-            await BusinessCentralApi.Instance.UploadDocument(entity.Number, entity.FileName, bytes);
+            Task.Run(async () => await BusinessCentralApi.Instance.UploadDocument(entity.Number, entity.FileName, bytes));
         }
 
         public void DeleteStream(Document entity)

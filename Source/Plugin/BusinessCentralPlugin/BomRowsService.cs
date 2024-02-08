@@ -51,9 +51,9 @@ namespace BusinessCentralPlugin
             throw new NotSupportedException();
         }
 
-        public override async void Update(BomRow entity)
+        public override void Update(BomRow entity)
         {
-            var item = await BusinessCentralApi.Instance.GetItemCardMin(entity.ChildNumber);
+            var item = Task.Run(async () => await BusinessCentralApi.Instance.GetItemCardMin(entity.ChildNumber)).Result;
             var bomRow = new ProdBOMLine
             {
                 Production_BOM_No = entity.ParentNumber,
@@ -63,12 +63,12 @@ namespace BusinessCentralPlugin
                 Quantity_per = (decimal)entity.Quantity,
                 Routing_Link_Code = entity.IsRawMaterial ? Configuration.RoutingLinkRawMaterial : null
             };
-            await BusinessCentralApi.Instance.UpdateBomRow(bomRow);
+            Task.Run(async () => await BusinessCentralApi.Instance.UpdateBomRow(bomRow));
         }
 
-        public override async void Create(BomRow entity)
+        public override void Create(BomRow entity)
         {
-            var item = await BusinessCentralApi.Instance.GetItemCardMin(entity.ChildNumber);
+            var item = Task.Run(async () => await BusinessCentralApi.Instance.GetItemCardMin(entity.ChildNumber)).Result;
             var bomRow = new ProdBOMLine
             {
                 Production_BOM_No = entity.ParentNumber,
@@ -78,10 +78,10 @@ namespace BusinessCentralPlugin
                 Quantity_per = (decimal)entity.Quantity,
                 Routing_Link_Code = entity.IsRawMaterial ? Configuration.RoutingLinkRawMaterial : null
             };
-            await BusinessCentralApi.Instance.CreateBomRow(bomRow);
+            Task.Run(async () => await BusinessCentralApi.Instance.CreateBomRow(bomRow));
         }
 
-        public override async void Delete(BomRow entity)
+        public override void Delete(BomRow entity)
         {
             var bomRow = new ProdBOMLine
             {
@@ -89,7 +89,7 @@ namespace BusinessCentralPlugin
                 Line_No = entity.Position,
                 No = entity.ChildNumber
             };
-            await BusinessCentralApi.Instance.DeleteBomRow(bomRow);
+            Task.Run(async () => await BusinessCentralApi.Instance.DeleteBomRow(bomRow));
         }
     }
 }

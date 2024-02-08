@@ -138,7 +138,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Company>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -151,7 +151,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Vendor>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -164,7 +164,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Lookup>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -177,7 +177,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Lookup>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -190,7 +190,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Lookup>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -203,7 +203,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<Lookup>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -216,7 +216,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<AttributeDefinition>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -229,7 +229,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<RoutingLink>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -244,7 +244,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<ItemMin>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value.FirstOrDefault();
         }
@@ -270,7 +270,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ODataResponse<ItemCard>>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data.Value;
         }
@@ -296,7 +296,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ItemCardMin>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -334,7 +334,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
         }
 
         // Page 30: Item Card
@@ -360,7 +360,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ItemCard>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -386,7 +386,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ItemCard>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -410,7 +410,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ItemCard>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -429,7 +429,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<dynamic>(request);
             //if (!response.IsSuccessful)
-            //    throw new Exception(response.ErrorMessage);
+            //    throw new Exception(response.Content);
 
             string result = response.Data.value;
             if (result == null)
@@ -445,7 +445,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<dynamic>(request);
             //if (!response.IsSuccessful)
-            //    throw new Exception(response.ErrorMessage);
+            //    throw new Exception(response.Content);
 
             string result = response.Data.value;
             if (result == null)
@@ -469,7 +469,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
         }
 
         // CodeUnit 50149: ItemAttributes
@@ -484,7 +484,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<dynamic>(request);
             //if (!response.IsSuccessful)
-            //    throw new Exception(response.ErrorMessage);
+            //    throw new Exception(response.Content);
 
             string result = response.Data.value;
             if (result == null)
@@ -500,7 +500,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<dynamic>(request);
             //if (!response.IsSuccessful)
-            //    throw new Exception(response.ErrorMessage);
+            //    throw new Exception(response.Content);
 
             string result = response.Data.value;
             if (result == null)
@@ -524,7 +524,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
         }
         #endregion
 
@@ -537,7 +537,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProductionBOMMin>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -573,7 +573,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProductionBOM>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -598,7 +598,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProductionBOM>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -611,7 +611,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProdBOMLineMin>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -651,7 +651,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProdBOMLine>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -681,7 +681,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<ProdBOMLine>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -696,7 +696,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
         }
         #endregion
 
@@ -743,7 +743,7 @@ namespace BusinessCentralPlugin.Helper
 
             var response = await GetRestClient().ExecuteAsync<BusinessCentral_Document>(request);
             if (!response.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
 
             return response.Data;
         }
@@ -812,7 +812,7 @@ namespace BusinessCentralPlugin.Helper
 
             var uploadResponse = await GetRestClient().ExecuteAsync(uploadRequest);
             if (!uploadResponse.IsSuccessful)
-                throw new Exception(response.ErrorMessage);
+                throw new Exception(response.Content);
         }
         #endregion
     }

@@ -66,9 +66,9 @@ namespace BusinessCentralPlugin
             throw new NotSupportedException();
         }
 
-        public override async void Update(BomHeader entity)
+        public override void Update(BomHeader entity)
         {
-            var item = await BusinessCentralApi.Instance.GetItemCard(entity.Number);
+            var item = Task.Run(async () => await BusinessCentralApi.Instance.GetItemCard(entity.Number)).Result;
             var bomHeader = new ProductionBOM
             {
                 No = entity.Number,
@@ -83,9 +83,9 @@ namespace BusinessCentralPlugin
             Task.WaitAll(tasks.ToArray());
         }
 
-        public override async void Create(BomHeader entity)
+        public override void Create(BomHeader entity)
         {
-            var item = await BusinessCentralApi.Instance.GetItemCard(entity.Number);
+            var item = Task.Run(async () => await BusinessCentralApi.Instance.GetItemCard(entity.Number)).Result;
             var bomHeader = new ProductionBOM
             {
                 No = entity.Number,
