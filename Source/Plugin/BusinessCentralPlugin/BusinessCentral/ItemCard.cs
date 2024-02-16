@@ -24,7 +24,7 @@ namespace BusinessCentralPlugin.BusinessCentral
         public string Gen_Prod_Posting_Group { get; set; }
         public string Inventory_Posting_Group { get; set; }
         public double Unit_Price { get; set; }
-        public int Inventory { get; set; }
+        public double Inventory { get; set; }
         public string Vendor_No { get; set; }
         public string Routing_No { get; set; }
         public string Production_BOM_No { get; set; }

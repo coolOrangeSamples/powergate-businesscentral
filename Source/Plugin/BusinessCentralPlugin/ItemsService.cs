@@ -24,7 +24,7 @@ namespace BusinessCentralPlugin
         public double Weight { get; set; }
         public string Material { get; set; }
         public double Price { get; set; } // readonly
-        public int Stock { get; set; } // readonly
+        public double Stock { get; set; } // readonly
         public bool MakeBuy { get; set; } // readonly
         public bool Blocked { get; set; } // readonly
         public string Supplier { get; set; } // readonly
