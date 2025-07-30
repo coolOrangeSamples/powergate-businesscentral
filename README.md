@@ -59,12 +59,19 @@ In Business Central, go to "Administration" - "System Administration" - "Service
 
 Make sure, the web services are "Published" and that the ***Service Name*** exactly matches, otherwise the plugin will terminate with errors.
 
+#### Enable Business Central for OData services
+Check in Business Central Administration Shell (run as Administrator) whether OData Services are enabled:  
+`Get-NavServerConfiguration -ServerInstance <your Instance, e.g. BC220>`   
+Check in provided list that `ODataServicesEnabled` is set to 'true'.
+
+If `ODataServicesEnabled` is set to 'false', set it to 'true':  
+`Set-NAVServerConfiguration -ServerInstance BC220 -KeyName ODataServicesEnabled -KeyValue true`
+
 ### Business Central Authentication (Cloud)
 For a Business Central Cloud authentication, a Service-to-Service (S2S) Authentication must be setup. Follow the [official documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication) to setup a S2S OAuth connection. Pictured step-by-step instructions can also be found here: [https://thatnavguy.com/d365-business-central-setup-oauth2-authentication/](https://thatnavguy.com/d365-business-central-setup-oauth2-authentication/)
 
 ### Business Central Authentication (On-Prem)
 For an authentication with Business Central that is installed on-prem, the "NavUserPassword" [credential type](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/users-credential-types) must be enabled. This can be setup in the navsettings.json file of the on-prem Business Central installation.
-
 
 ### powerGate Plugin Settings
 On the powerGate Server, open the file "*C:\ProgramData\coolOrange\powerGateServer\Plugins\BusinessCentral\BusinessCentralPlugin.dll.config*" in a text editor and modify the following settings:
