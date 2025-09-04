@@ -15,6 +15,7 @@ THE SAMPLE CODE ON THIS REPOSITORY IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY K
 THE USAGE OF THIS SAMPLE IS AT YOUR OWN RISK AND **THERE IS NO SUPPORT** RELATED TO IT.
 
 ## Description
+<img width="882" height="653" alt="BC-powerGate" src="https://github.com/user-attachments/assets/d4560e02-64cf-4ce2-b4fc-867b6a445fd8" />
 
 powerGate Server Plugin that connects Autodesk Vault with Microsoft Dynamics Business Central (Cloud and On-Prem). Supports Business Central 2023 Release Wave 1 and later versions.
 
